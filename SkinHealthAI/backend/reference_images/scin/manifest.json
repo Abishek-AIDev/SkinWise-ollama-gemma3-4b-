@@ -1,0 +1,142 @@
+{
+  "dataset": "SCIN (Skin Condition Image Network)",
+  "attribution": "Images sourced from the SCIN Dataset, Google Research, with dermatologist-provided differential labels.",
+  "dataset_url": "https://github.com/google-research-datasets/scin",
+  "license_url": "https://github.com/google-research-datasets/scin/blob/main/LICENSE",
+  "license_file": "SCIN_LICENSE.txt",
+  "use": "Educational visual comparison only. Labels are differential labels, not confirmed diagnoses.",
+  "references": [
+    {
+      "condition": "Eczema",
+      "file": "eczema-1.png",
+      "weighted_label_score": 1.0,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Eczema",
+      "file": "eczema-2.png",
+      "weighted_label_score": 0.35,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Allergic Contact Dermatitis",
+      "file": "allergic-contact-dermatitis-1.png",
+      "weighted_label_score": 0.67,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Allergic Contact Dermatitis",
+      "file": "allergic-contact-dermatitis-2.png",
+      "weighted_label_score": 0.5,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Urticaria",
+      "file": "urticaria-1.png",
+      "weighted_label_score": 0.67,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Urticaria",
+      "file": "urticaria-2.png",
+      "weighted_label_score": 0.67,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Insect Bite",
+      "file": "insect-bite-1.png",
+      "weighted_label_score": 0.55,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Insect Bite",
+      "file": "insect-bite-2.png",
+      "weighted_label_score": 0.5,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Folliculitis",
+      "file": "folliculitis-1.png",
+      "weighted_label_score": 1.0,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Folliculitis",
+      "file": "folliculitis-2.png",
+      "weighted_label_score": 0.67,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Tinea",
+      "file": "tinea-1.png",
+      "weighted_label_score": 0.57,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Tinea",
+      "file": "tinea-2.png",
+      "weighted_label_score": 0.55,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Psoriasis",
+      "file": "psoriasis-1.png",
+      "weighted_label_score": 0.67,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Psoriasis",
+      "file": "psoriasis-2.png",
+      "weighted_label_score": 0.41,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Acne",
+      "file": "acne-1.png",
+      "weighted_label_score": 0.55,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Acne",
+      "file": "acne-2.png",
+      "weighted_label_score": 0.5,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Impetigo",
+      "file": "impetigo-1.png",
+      "weighted_label_score": 0.67,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Impetigo",
+      "file": "impetigo-2.png",
+      "weighted_label_score": 0.41,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Cellulitis",
+      "file": "cellulitis-1.png",
+      "weighted_label_score": 0.4,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Cellulitis",
+      "file": "cellulitis-2.png",
+      "weighted_label_score": 0.52,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Scabies",
+      "file": "scabies-1.png",
+      "weighted_label_score": 0.5,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    },
+    {
+      "condition": "Scabies",
+      "file": "scabies-2.png",
+      "weighted_label_score": 0.33,
+      "source_url": "https://github.com/google-research-datasets/scin"
+    }
+  ]
+}

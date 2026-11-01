@@ -1,0 +1,19 @@
+{
+  "title": "Skinwise safety reference bundle",
+  "purpose": "General educational guardrails for a photo assistant. This bundle is not a diagnostic dataset and cannot establish the cause of a skin change.",
+  "rules": [
+    "A skin photo alone cannot confirm infection, allergy, or another diagnosis. Describe visible features and uncertainty; encourage clinical assessment when appropriate.",
+    "Emergency signs include trouble breathing or swallowing, swelling of tongue or throat, fainting, or confusion during a possible allergic reaction. Direct the person to emergency services immediately.",
+    "Prompt medical assessment is appropriate for skin that is increasingly hot, painful, swollen, rapidly spreading, blistering, or producing pus, especially with fever or feeling unwell.",
+    "Rashes over much of the body, painful or rapidly spreading rashes, blisters/open sores, fever with rash, or rash involving eyes, lips, mouth, or genital skin need medical attention.",
+    "Low-risk general steps: wash hands before touching the area, keep it gently clean, avoid scratching or squeezing, and stop a newly introduced product that appears to trigger irritation.",
+    "Do not prescribe or recommend antibiotics, prescription treatments, steroid creams, or stopping prescribed medicine. Do not offer certainty scores.",
+    "Redness can be less obvious on darker skin. Do not use lack of visible redness to rule out infection.",
+    "For a child under two, do not assess or diagnose from a photo; advise contacting a healthcare professional."
+  ],
+  "sources": [
+    {"publisher": "American Academy of Dermatology", "title": "Signs your rash needs medical attention", "url": "https://www.aad.org/news/signs-your-rash-needs-medical-attention"},
+    {"publisher": "NHS", "title": "Cellulitis", "url": "https://www.nhs.uk/conditions/cellulitis/"},
+    {"publisher": "NHS", "title": "Anaphylaxis", "url": "https://www.nhs.uk/conditions/anaphylaxis/"}
+  ]
+}

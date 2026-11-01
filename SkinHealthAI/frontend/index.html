@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f8f3"><meta name="description" content="A private, offline-ready guide for understanding skin concerns.">
+  <link rel="manifest" href="/manifest.json"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
+  <title>Skinwise — gentle guidance, when you need it</title>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">✳</span><span>skinwise<span class="brand-dot">.</span></span></a><div class="status"><span class="status-light" id="statusLight"></span><span id="statusText">Checking private model…</span><button class="icon-button" id="aboutBtn" aria-label="About this app">i</button></div></header>
+  <main>
+    <section class="hero"><div class="eyebrow"><span class="spark">✳</span> YOUR PERSONAL SKIN GUIDE</div><h1>Let’s take a closer<br><em>look at your skin.</em></h1><p class="hero-copy">A little clarity can go a long way. Share a photo and tell us what you’ve noticed to get thoughtful, private guidance.</p>
+      <div class="privacy-note"><span class="lock-icon">♢</span><span><strong>Your photo stays yours.</strong> Analysis runs on your Ollama model. Photos aren’t saved by Skinwise.</span></div>
+    </section>
+    <section class="workspace">
+      <div class="panel photo-panel"><div class="panel-heading"><div><span class="step">01</span><h2>Add a photo</h2></div><span class="optional">OPTIONAL</span></div>
+        <p class="section-hint">Good light and a clear, close view help. Include something familiar for scale.</p>
+        <div class="photo-stage" id="photoStage"><div class="stage-inner" id="stageEmpty"><div class="camera-illustration"><span>◉</span><i>✳</i></div><strong>Your photo will appear here</strong><small>JPEG, PNG or WebP · up to 8 MB</small></div><img id="preview" alt="Selected skin photo preview" hidden><button class="remove-photo" id="removePhoto" aria-label="Remove photo" hidden>×</button></div>
+        <div class="photo-actions"><button class="button button-dark" id="cameraBtn"><span class="button-icon">◉</span> Open camera</button><button class="button button-outline" id="uploadBtn"><span class="button-icon">↥</span> Upload photo</button><input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden></div>
+        <p class="photo-tip"><span>✳</span> Avoid filters. Don’t photograph intimate areas.</p>
+      </div>
+      <div class="panel details-panel"><div class="panel-heading"><div><span class="step">02</span><h2>What have you noticed?</h2></div><span class="optional">HELPS WITH CONTEXT</span></div>
+        <label class="field-label" for="notes">Tell us about it <span>(optional)</span></label><textarea id="notes" maxlength="1800" placeholder="For example: when it started, whether it itches or hurts, if it’s spreading, and anything new you’ve used…"></textarea>
+        <div class="quick-prompts"><button class="chip" data-note="It feels itchy.">Itchy</button><button class="chip" data-note="It feels painful or tender.">Painful</button><button class="chip" data-note="It feels warm to touch.">Warm</button><button class="chip" data-note="It is spreading or changing.">Spreading</button></div>
+        <label class="urgent-check"><input id="urgentCheck" type="checkbox"><span>If there is trouble breathing or swallowing, tongue/throat swelling, fainting, or confusion</span></label>
+        <div class="age-row"><label for="ageCheck">Is this for a child under 2?</label><label class="switch"><input id="ageCheck" type="checkbox"><span></span></label></div>
+        <button class="button button-primary" id="analyzeBtn"><span>Get gentle guidance</span><span class="arrow">↗</span></button>
+        <div class="model-foot"><span class="model-pip"></span><span id="modelLabel">Local analysis · Gemma 3:4b</span><span class="offline-label">OFFLINE READY</span></div>
+      </div>
+    </section>
+    <section class="urgent-banner"><div class="urgent-icon">!</div><div><strong>Having trouble breathing or swallowing?</strong><p>Get emergency help now. Don’t wait for an app response.</p></div><a href="#help">See urgent signs <span>↗</span></a></section>
+    <section class="result panel" id="result" hidden><div class="result-head"><div><span class="eyebrow">YOUR SKINWISE NOTES</span><h2>Here’s what to know</h2></div><button class="icon-button" id="clearResult" aria-label="Clear result">×</button></div><div class="result-body" id="resultBody"></div><p class="result-foot">This is general information, not a diagnosis. A photo can’t replace a clinician’s assessment. When used, visual examples are from the <a href="https://github.com/google-research-datasets/scin" target="_blank" rel="noreferrer">SCIN dataset</a>; resemblance does not confirm a condition.</p></section>
+    <section class="offline-guide" id="help"><div class="guide-top"><div><span class="eyebrow">HERE WHEN YOU NEED IT</span><h2>Know when to get help</h2></div><span class="offline-badge">✳ AVAILABLE OFFLINE</span></div>
+      <div class="help-grid"><article class="help-card emergency"><span class="card-symbol">↗</span><div><h3>Get emergency help now</h3><p>Trouble breathing or swallowing, swelling of the tongue or throat, fainting, or confusion can signal a severe reaction.</p></div></article><article class="help-card soon"><span class="card-symbol">＋</span><div><h3>Seek urgent medical advice</h3><p>Skin that is hot, painful, swollen, rapidly spreading, blistering, or producing pus—especially with fever or feeling unwell—needs prompt assessment.</p></div></article><article class="help-card gentle"><span class="card-symbol">♡</span><div><h3>Keep care gentle</h3><p>Wash hands before touching the area. Keep it clean, avoid scratching or squeezing, and pause any new product that seems to trigger irritation.</p></div></article></div>
+      <p class="source-note">Guidance: American Academy of Dermatology · NHS · <a href="https://www.aad.org/news/signs-your-rash-needs-medical-attention" target="_blank" rel="noreferrer">rash warning signs</a> · <a href="https://www.nhs.uk/conditions/cellulitis/" target="_blank" rel="noreferrer">cellulitis</a> · <a href="https://www.nhs.uk/conditions/anaphylaxis/" target="_blank" rel="noreferrer">anaphylaxis</a>. Keep this guide accessible offline.</p>
+    </section>
+    <footer><a class="brand footer-brand" href="#"><span class="brand-mark">✳</span><span>skinwise<span class="brand-dot">.</span></span></a><span>Thoughtful guidance. A good next step.</span><button id="guideBtn">Safety & privacy</button></footer>
+  </main>
+  <dialog id="cameraDialog" class="camera-dialog"><button class="dialog-close" id="cameraClose" aria-label="Close camera">×</button><h2>Take a skin photo</h2><p>Hold steady in good light, then tap the shutter.</p><div class="camera-view"><video id="cameraVideo" autoplay playsinline></video><canvas id="cameraCanvas" hidden></canvas><div class="camera-message" id="cameraMessage" hidden></div></div><div class="camera-help" id="cameraHelp" hidden><button class="button button-outline" id="systemCameraBtn">Open laptop Camera</button><button class="text-button" id="chooseAfterCamera">I took a photo · choose it</button></div><div class="camera-controls"><button class="button button-outline" id="cameraCancel">Cancel</button><button class="shutter" id="shutterBtn" aria-label="Capture photo" disabled><span></span></button><span class="camera-spacer"></span></div></dialog>
+  <dialog id="aboutDialog"><button class="dialog-close" id="closeDialog" aria-label="Close">×</button><div class="brand-mark">✳</div><h2>A caring first step.</h2><p>Skinwise offers general skin-health information, not medical diagnosis. A photo cannot reliably tell whether something is an infection, allergy, or another condition. When in doubt, contact a healthcare professional.</p><p><strong>Privacy:</strong> the image is sent to the Ollama host configured for this app to generate an answer. By default this is your own computer. Skinwise does not store photos or analysis history.</p><button class="button button-primary" id="dialogDone">Got it</button></dialog>
+  <script src="/app.js" defer></script>
+</body></html>
